@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-Bold.otf">
+            <string>Dosis-Bold</string>
+        </mutableArray>
+        <mutableArray key="Dosis-SemiBold.otf">
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+            <string>Dosis-SemiBold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="viewPrivateGroup">
+            <connections>
+                <outlet property="categoryInfo" destination="5Av-0F-Khd" id="Ef8-VJ-zCb"/>
+                <outlet property="createdInfo" destination="ZHV-Ud-g4B" id="aHX-yg-7pr"/>
+                <outlet property="groupDescTextView" destination="za8-WI-xIF" id="vTl-gb-CT1"/>
+                <outlet property="groupImageView" destination="r5a-YD-HHc" id="iRR-cq-JM9"/>
+                <outlet property="groupNameTextView" destination="hk9-eJ-B75" id="RBX-jl-lpc"/>
+                <outlet property="iconMembers" destination="QW7-zj-wQ0" id="UvU-4s-Gpz"/>
+                <outlet property="iconShare" destination="drC-jg-n7T" id="czT-Tx-ZU1"/>
+                <outlet property="iconType" destination="Ri2-TU-rPp" id="NNF-It-u11"/>
+                <outlet property="inviteButton" destination="b9W-xF-P2m" id="J5C-4D-RYw"/>
+                <outlet property="locationImage" destination="06E-8D-mjL" id="qDi-IG-ppu"/>
+                <outlet property="locationLbl" destination="o1j-Mr-RBN" id="6Oq-AC-lgZ"/>
+                <outlet property="pendingImage" destination="WJU-6P-obf" id="8ps-3j-MBV"/>
+                <outlet property="pendinglabel" destination="1u8-R0-cn5" id="2rp-C5-x7Y"/>
+                <outlet property="resetGeoButton" destination="uA7-0g-5HF" id="RUT-Ib-1Da"/>
+                <outlet property="scrollView" destination="rFe-HV-h2a" id="qlM-xK-v6X"/>
+                <outlet property="sharelabel" destination="Ijr-a1-gdg" id="wjT-Ue-Mln"/>
+                <outlet property="totalMembers" destination="RUm-G7-Jna" id="ayF-6n-NaP"/>
+                <outlet property="typeInfo" destination="faq-Ic-uh2" id="WUq-n1-o3f"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rFe-HV-h2a">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="r5a-YD-HHc">
+                            <rect key="frame" x="15" y="15" width="85" height="85"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Group Name" id="hk9-eJ-B75" userLabel="GroupName">
+                            <rect key="frame" x="103" y="5" width="195" height="56"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.1058823529" green="0.6588235294" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" id="Rcl-iJ-Je1">
+                            <rect key="frame" x="5" y="115" width="310" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QW7-zj-wQ0">
+                            <rect key="frame" x="12" y="124" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="indicator">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="manageMembers:" destination="-1" eventType="touchUpInside" id="0sm-pd-44w"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="345 members" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" id="RUm-G7-Jna">
+                            <rect key="frame" x="56" y="115" width="63" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="15"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ri2-TU-rPp">
+                            <rect key="frame" x="120" y="128" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="1" green="0.37715926999999999" blue="0.07380588263" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" backgroundImage="groupTypeGlogal">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Global" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="faq-Ic-uh2">
+                            <rect key="frame" x="158" y="132" width="51" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="15"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="drC-jg-n7T">
+                            <rect key="frame" x="217" y="128" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="sharegroup">
+                                <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shareGroupInfo:" destination="-1" eventType="touchUpInside" id="L07-5u-rDr"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ijr-a1-gdg">
+                            <rect key="frame" x="255" y="132" width="47" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="15"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="UMg-3N-vi9">
+                            <rect key="frame" x="5" y="166" width="310" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description" id="za8-WI-xIF" userLabel="Description">
+                            <rect key="frame" x="10" y="167" width="300" height="57"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" id="Odp-9X-ROw">
+                            <rect key="frame" x="5" y="227" width="310" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="p3A-dC-KqI">
+                            <rect key="frame" x="12" y="233" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="indicator">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Addmember:" destination="-1" eventType="touchUpInside" id="gcA-xe-VPV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b9W-xF-P2m">
+                            <rect key="frame" x="57" y="236" width="242" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
+                            <state key="normal" title="Add new member">
+                                <color key="titleColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="Addmember:" destination="-1" eventType="touchUpInside" id="hUb-s1-kI0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CVO-PH-jUw">
+                            <rect key="frame" x="14" y="271" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="leave">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="leaveGroup:" destination="-1" eventType="touchUpInside" id="7nM-YV-bY4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pkh-YI-Vgn">
+                            <rect key="frame" x="57" y="272" width="206" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
+                            <state key="normal" title="Leave this group">
+                                <color key="titleColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="leaveGroup:" destination="-1" eventType="touchUpInside" id="oke-9b-tLZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="06E-8D-mjL">
+                            <rect key="frame" x="13" y="309" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="locationlogo">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="o1j-Mr-RBN">
+                            <rect key="frame" x="58" y="311" width="242" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
+                            <state key="normal" title="Location">
+                                <color key="titleColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WJU-6P-obf">
+                            <rect key="frame" x="13" y="345" width="34" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" backgroundImage="indicator">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pendingGroups:" destination="-1" eventType="touchUpInside" id="usO-kB-j3Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1u8-R0-cn5">
+                            <rect key="frame" x="58" y="347" width="244" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="16"/>
+                            <state key="normal" title="Pending Request">
+                                <color key="titleColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pendingGroups:" destination="-1" eventType="touchUpInside" id="C25-ya-Wu4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uA7-0g-5HF">
+                            <rect key="frame" x="0.0" y="389" width="320" height="42"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.81176470588235294" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                            <color key="tintColor" red="1" green="0.81176470588235294" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Reset Group Location">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="changeGeoLocation:" destination="-1" eventType="touchUpInside" id="oAl-cm-LXU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5Av-0F-Khd">
+                            <rect key="frame" x="110" y="60" width="195" height="22"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZHV-Ud-g4B">
+                            <rect key="frame" x="110" y="82" width="195" height="21"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.2274509804" green="0.21960784310000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yXE-xD-DnI"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="groupTypeGlogal" width="136" height="136"/>
+        <image name="indicator" width="113" height="113"/>
+        <image name="leave" width="136" height="136"/>
+        <image name="locationlogo" width="136" height="136"/>
+        <image name="sharegroup" width="136" height="136"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
